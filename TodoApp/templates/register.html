@@ -1,0 +1,53 @@
+{% include 'layout.html' %}
+
+<div class="container">
+    <div class="card-header">
+        Register
+    </div>
+    <div class="card-body">
+        <form id="registerForm">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label>Email</label>
+                    <input type="text" class="form-control" name="email" value="codingwithshalu@gmail.com" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label>Username</label>
+                    <input type="text" class="form-control" name="username" value="codingwithshalu" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label>First Name</label>
+                    <input type="text" class="form-control" name="firstname" value="shalu" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label>Last Name</label>
+                    <input type="text" class="form-control" name="lastname" value="jha" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label>Role</label>
+                    <input type="text" class="form-control" name="role" value="admin" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label>Phone Number</label>
+                    <input type="text" class="form-control" name="phone_number" value="(111)-111-1111" autocomplete="phone_number" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" class="form-control" name="password" value="1234" autocomplete="new-password" required>
+            </div>
+            <div class="form-group">
+                <label>Verify Password</label>
+                <input type="password" class="form-control" name="password2" value="1234" autocomplete="new-password" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign in</button>
+        </form>
+    </div>
+    <div class="card-footer text-muted">
+        <a href="/auth/login-page">Already have an account?</a>
+    </div>
+</div>
